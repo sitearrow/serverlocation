@@ -11,8 +11,10 @@ Free Server Location Hook for WHMCS, version 1.0
 
 ## How it works
 It uses the `AfterShoppingCartCheckout` hook in WHMCS to update the server ID in the database for the service based on the value selected in the configurable option.
-It allocates to the server with the lowest number of accounts on it that isn't set to Disabled in WHMCS. 
-This means that it does not take into account the "Maximum Number of Accounts" value in WHMCS at this stage.
+
+The hook will allocate the account to the server with the lowest number of accounts on it that isn't set to Disabled in WHMCS. 
+
+This means that it does not take into account the "Maximum Number of Accounts" value or "Utilisation %" in WHMCS at this stage.
 
 ## Fair Use Notice
 This project is licensed under the GPLv3. Redistribution, commercial usage, and modifications are allowed *only if* the full source code is made available under the same license. Rebranding or reselling without significant contribution is strongly discouraged.
